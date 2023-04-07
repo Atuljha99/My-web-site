@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio web site</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+        body {
+            background-color: rgb(5, 77, 74);
+        }
+         nav ul{
+            list-style: none;
+            margin: 0px;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            background-attachment: fixed;
+            
+         }
+        
+        .header ul {
+            border: solid 4px rgb(0, 0, 0);
+            background-color: rgb(34, 165, 197);
+            text-size-adjust: 80%;
+            position: fixed;
+            width: 100%;
+            top: 0%;
+            z-index: 999; 
+            margin-top: 10px; 
+            border-radius: 2px;
+        }
+        ul li{
+            display: inline-block;
+        }
+        ul li a{
+            text-decoration: none;
+            padding: 5px,20px;
+            border: solid #fff;
+            transition: o.5;
+        }
+        nav a:hover {
+            background-color: black;
+            color:rgb(218, 203, 203);
+            
+        }
+        .banner{
+            background-image: url(Images/simp.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 250px;
+            font-size: larger;
+            font-family: monospace;
+            width: 250px;
+            height: 150px;
+            text-align: center;
+            margin: 200px;
+            padding-right: 250pxl;
+            background-position-x: center;
+        }
+        .about {
+             
+             float: right;
+             background-repeat: no-repeat;
+             background-size: contain;
+             position: absolute;
+             width: 70%;
+             left: 10%;
+             padding: 40px;
+             background-color: black;
+             text-align: left;
+
+
+             
+        }
+        .img_p{
+            float: right;
+            background-position: right;
+            width: 40%;
+
+        }
+        .about {
+            margin: 5px;
+            padding: 6px;
+
+        }
+        .contant {
+            margin: 10px;
+            padding: 5px;
+            background-repeat: no-repeat;
+            background-size: 70%;
+            position: fixed;
+            position: absolute;
+            top: 1500px;
+            right: 60px;
+            border: solid 5px;
+            image-orientation: flip;
+            display: flex;
+            
+        }
+        
+        .Service img{
+            border: 10px;
+            margin: 4px;
+            padding: 6px;
+            border: solid 4px rgb(239, 17, 17);
+            /* inline-size: 70%; */
+            position: absolute;
+            top: 2000px;
+            left: 432px;
+            text-align: justify;
+            bottom: 2px;
+        }
+        .form {
+            margin: 2%;
+            padding: 2%;
+            border: solid 90px;
+        }
+
+    </style>
+</head>
+<body>
+    <header style="color: rgb(116, 85, 132);">
+            <nav class="header"> 
+                <ul style="flex: auto;">
+                    <h2 style="color: rgb(44, 172, 44,);">My Web Page</h3>
+                    <li> <a href="">Atul</a></li>
+                    <li> <a href="#">Home</a></li>
+                    <li> <a href="#">About</a></li>
+                    <li> <a href="#">Contant</a></li>
+                    <li> <a href="#">Service</li>
+                    <li> <a href="#">Contact </a></li>
+                </ul>
+            </nav>
+
+    </header>
+    <br><br>
+    <main>
+        <div class="banner">
+        <h2>Hi! I am Atul Jha</h2>
+        <p>Web Devloper</p>
+        <button>About me</button>
+        </div>
+        <br>
+        <br>
+
+        <div class="about">
+            <img class="img_p" src="Images/About.jpg" alt="Work">
+            <h1 style="color: rgb(47, 161, 161);">About me</h1>
+            <b style="background-color: cornsilk;">I am Atul and 
+                i am study in Chandigarh University </b>
+
+        </div>
+        <br><br>
+        <br>
+
+        
+        <div class="contant">
+            <h1>Contant</h1>
+            <img src="./Images/images (1).jpg" alt="Graphic"> <img src="/Images/download.jpg" alt="Graphicd">
+        <h2>Contant we use</h2>
+        <p> Lorem ipsum dolor sit amet consectetur adipismque veniam a doloribus!</p>
+
+        <!-- <img src="/Images/download.jpg" alt="Graphicd"> -->
+        <h2>Contant that use ful for us</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut suscipit et aliquam earum sed porro.</p>
+
+         </div>
+         <br><br>
+         <br>
+         <br>
+         
+
+
+        <div class="Service">
+            
+        <h1>Service we Provide</h1>
+        
+        <img src="/Images/web-web-devdeveloper.webp" alt="Devloper">
+        <img src="Images/software.jpg" alt="software">
+        <img src="Images/Graphic.jpg" alt="Graphic Design">
+        <img src="Images/UI and UX.jpg" alt="ui amd ux Design">
+        <h2>Web Devlopment</h2>
+        <!-- <img src="/Images/software.jpg" alt=""> -->
+        <h2>Softwere Devlopment</h2>
+        <!-- <img src="/Images/Graphic.jpg" alt="Graphic"> -->
+        <h2>Graphic Design </h2>
+        <!-- <img src="/Images/UI and UX.jpg" alt="ui and ux Design"> -->
+        <h2>UI and  UX Design</h2>
+    
+
+    </div> 
+    <br><br>`
+    <div class="form">
+        <form action="action.php" method="get">
+            <br>
+            <hr>
+            <input type="text" name="Username" id="uname" placeholder="Username">
+            <br>
+            <input type="password" name="password" id="pname" placeholder="Password">
+            <br>
+            <input type="email" name="email" id="ename" placeholder="Email">
+            <br><br>
+            <button>Submit</button>
+
+        </form>
+    </div>
+
+    <footer class="footer">
+        <p>&copy;</p>
+
+
+    </footer>
+
+
+
+
+
+    </main>
+</body>
+</html>
